@@ -54,6 +54,7 @@ export class AppComponent implements OnInit {
       this.June = data.jun;
       let newRate = [this.January, this.February, this.March, this.April, this.May, this.June];
       this.changeRate(newRate);
+      io.emit('signalz', 'received');
     });
     this.getRate().subscribe((newRateData) => this.changeRate(newRateData));
     this.getColor().subscribe((newColorData) => this.changeColor(newColorData));
