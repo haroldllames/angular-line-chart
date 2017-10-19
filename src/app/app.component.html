@@ -1,6 +1,15 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
+<div class="row">
+  <div class="col-md-4">
+  </div>
+  <div class="col-md-4 chart">
+      <canvas baseChart width="400" height="200" [datasets]="datasets" [labels]="labels" [options]="options" [colors]="lineChartColor"
+          [chartType]="lineChartType"></canvas>
+      <div class="log-area" id="log-area">
+          <ul>
+              <li *ngFor="let log of logs" class="logs" [innerHTML]="log">
+              </li>
+          </ul>
+      </div>
+  </div>
+  <div class="col-md-4"></div>
 </div>
