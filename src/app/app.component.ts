@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   June: number;
   logs = [];
   backGroundColor: string = 'rgba(77,83,6,0.2)';
-  socket = io('http://192.168.1.197:8080');
+  socket = io('https://socket-io-use.herokuapp.com:8080');
 
   constructor(myEl: ElementRef) { }
 
