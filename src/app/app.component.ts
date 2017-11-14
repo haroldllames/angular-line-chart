@@ -64,7 +64,7 @@ export class AppComponent implements OnInit {
 
   public datasets = [
     {
-      label: "Monthly Rate",
+      label: "Monthly Rate for 2016",
       data: [this.January, this.February, this.March, this.April, this.May, this.June]
     }
   ];
