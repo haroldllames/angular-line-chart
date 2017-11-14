@@ -113,7 +113,7 @@ export class AppComponent implements OnInit {
   changeRate(newRate) {
     let newDataset = [
       {
-        label: "Monthly Rate",
+        label: "Monthly Rate for 2016",
         data: newRate
       }
     ];
